@@ -1,35 +1,3 @@
-/*const EncriptarButton = document.getElementById("EncriptarButton");
-const DesencriptarButton = document.getElementById("DesencriptarButton");
-const CopiarButton = document.getElementById("CopiarButton");
-const mensajeEncriptado = document.getElementById('mensajeEncriptado');
-
-
-
-
-function encriptar(resultado){
-
-    mensaje = document.getElementById("mensaje").value;
-    resultado = mensaje.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-    console.log(resultado);
-
-}
-
-function desencriptar(resultado){
-
-    mensaje = document.getElementById("mensaje").value;
-    resultado = mensaje.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
-    console.log(resultado);
-
-}
-
-function copiar(resultado){
-
-    console.log(resultado);
-    navigator.clipboard.writeText(resultado);
-
-}
-*/
-
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
@@ -58,6 +26,16 @@ function btnDesencriptar(){
     textArea.value = "";
 }
 
+function copiar(){
+    var copyText = document.querySelector(".mensaje");
+
+    copyText.select();
+    copyText.setSelectionRange(0,99999);
+
+    navigator.clipboard.writeText(copyText.value);
+
+    alert("El texto copiado es: " + copyText.value)
+}
 
 
 function desencriptar(stringDesencriptado){
