@@ -13,6 +13,11 @@
     float: none;
 }
 
+.nombre{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+
 main{
     display: flex;
     margin-bottom: 50px;
@@ -24,6 +29,7 @@ main{
     color: #043871;
     margin-top: 90px;
     text-transform: lowercase;
+    text-shadow: 20px 15px 7px black;
 }
 ::placeholder {color: #043871;}
 .text-area:focus{
@@ -42,6 +48,7 @@ main{
     padding-left: 20px;
     position: fixed;
 }
+
 .mensaje:focus{
     outline: none;
 }
@@ -100,3 +107,8 @@ main{
         width: 20em;
     }
 }
+
+
+
+
+    
